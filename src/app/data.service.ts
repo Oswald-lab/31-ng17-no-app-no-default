@@ -11,4 +11,8 @@ export class DataService {
   getPosts(): Observable<unknown[]> {
     return this.http.get<unknown[]>(this.postsUrl);
   }
+
+  add(a: number, b: number): number {
+    return a + b;
+  }
 }
